@@ -16,7 +16,7 @@ FORM f_get_dados.
 ENDFORM.
 
 FORM f_display_alv.
-  CALL METHOD cl_salv_table=>factory "chama o método factory
+  CALL METHOD cl_salv_table=>factory "chama o método factory da classe cl_salv_table
    IMPORTING 
      r_salv_table = cl_table "importa uma tabela pronta alv
    CHANGING 
