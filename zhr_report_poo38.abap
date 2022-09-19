@@ -30,6 +30,6 @@ ENDFORM.
 FORM f_feed_functions.
   DATA: lc_functions TYPE REF TO cl_salv_functions. "variável local do tipo classes de funções alv
   
-  lc_functions = cl_table=>get_functions(). "passando a tabela interna para a variável local e fazendo-a receber uma função
+  lc_functions = cl_table=>get_functions(). 
   lc_functions=>set_all( abap_true ). "habilitando todas as funcionalidades do alv com o método set_all()
 ENDFORM.
